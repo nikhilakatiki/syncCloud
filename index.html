@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .main {
+        display: flex;
+        flex-direction: column;
+        border-color: black;
+        border-style: groove;
+        height: 93vh;
+    }
+
+    .row1 {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        justify-content: start;
+        background-color: darkgray;
+        height: 3vh;
+        padding: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-color: black;
+        border-style: groove;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+
+    .row1>div {
+        padding-right: 10px;
+
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: row;
+        background-color: darkgray;
+        height: 4vh;
+        padding-top: 10px;
+        border-color: black;
+        border-style: groove;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .search {
+        background-image: url("public/search.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 15px;
+    }
+
+    .plus {
+        background-image: url("public/plus.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        text-align: center;
+    }
+
+    .equal {
+        padding-left: 7px;
+    }
+
+    .equals {
+        padding-left: 20px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* .divs{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .row3 {
+        border-color: black;
+        border-style: groove;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        width: 6vw;
+        border-color: black;
+        border-style: groove;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+        background-color: lightslategrey;
+        padding-left: 1vw;
+        padding-top: 1vw;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 20vh;
+        padding-top: 10vh;
+        padding-left: 2vw;
+    }
+
+    .ek {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cc {
+        width: 90%;
+        color: darkslategray;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 4vh;
+    }
+
+    .mc {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1vw;
+    }
+
+    .bb {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+    }
+
+    .line {
+        border-width: 1px;
+        border-radius: 1px;
+        border-color: dimgrey;
+        border-style: solid;
+        width: 85vw;
+    }
+
+    .creative {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .creat1 {
+        padding-top: 2vw;
+        width: 50%;
+        color: dimgrey;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .creat2 {
+        padding-top: 2vw;
+        ;
+    }
+
+    .space {
+        padding-left: 13vw;
+
+    }
+
+    .spacing {
+        padding-right: 1vw;
+        ;
+    }
+
+    .cr {
+        padding-top: 1vh;
+    }
+
+    .line2 {
+        border-width: 1px;
+        border-radius: 1px;
+        border-color: dimgrey;
+        border-style: dotted;
+        width: 85vw;
+    }
+
+    .pad {
+        padding-top: 2vw;
+    }
+
+    .row4 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 5vh;
+    }
+
+    .progress-bar {
+        width: 15%;
+        background-color:lightblue;
+        padding: 1px;
+        border-radius: 1px;
+        height: 2vh;
+    }
+
+    .progress-bar-fill {
+        display: block;
+        height: 11px;
+        padding-top: 4px;
+        background-color:dimgrey;
+        border-radius: 3px;
+    }
+
+    .borderfil{
+        padding-left:1vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .gb{
+        padding-left: 67vw;
+    }
+    body{
+        height: 93vh;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="row1">
+            <div>File</div>
+            <div>Edit</div>
+            <div>View</div>
+            <div>Tools</div>
+            <div>Help</div>
+        </div>
+        <div class="row2">
+            <div class="equal">
+                <img class="equal" src="public\arrow-left.png" width="15" height="15">
+                <img class="equal" src="public\arrow-right.png" width="15" height="15">
+                <input class="search equals" type="text" id=name size="30">
+                <input class="plus equals" type="text" value="Add Folder" id=name size="18">
+            </div>
+        </div>
+        <div class="row3">
+            <div class="one">
+                <img class="equal" src="public\cloud.png" width="50" height="50">
+                <img class="equal pad" src="public\users.png" width="50" height="50">
+                <img class="equal pad" src="public\clock.png" width="50" height="50">
+                <img class="equal pad" src="public\address-book.png" width="50" height="50">
+            </div>
+            <div class="two">
+                <div class="ek">
+                    <div class="cc">
+                        Cloud Folders
+                    </div>
+                    <div class="mc">
+                        <div class="bb">
+                            <div>
+                                <img class="equal" src="public\laptop.png" width="40" height="40">
+                            </div>
+                            <div>
+                                New Macbook
+                            </div>
+                        </div>
+                        <div class="bb">
+                            <div>
+                                <img class="equal" src="public\display.png" width="40" height="40">
+                            </div>
+                            <div>
+                                Home PC
+                            </div>
+                        </div>
+                        <div class="bb">
+                            <div>
+                                <img class="equal" src="public\mobile.png" width="40" height="40">
+                            </div>
+                            <div>
+                                Galaxy S3
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div>
+                        <a>Cloud Folders</a>
+                    </div>
+                    <div class="icons">
+                        <a>New Macbook</a>
+                        <a>Home PC</a>
+                        <a>Galaxy S3</a>
+                    </div> -->
+                </div>
+                <div class="line"></div>
+                <div class="do">
+                    <div class="creative">
+                        <div class="creat1">
+                            <div>
+                                <img class="equal spacing" src="public\file-zip.png" width="40" height="40">
+                            </div>
+                            <div class="cr">
+                                Creative
+                            </div>
+                        </div>
+                        <div class="creat2">
+                            <div>
+                                <img class="equal" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="creative">
+                        <div class="creat1">
+                            <div>
+                                <img class="equal spacing" src="public\file-zip.png" width="40" height="40">
+                            </div>
+                            <div class="cr">
+                                Desktop
+                            </div>
+                        </div>
+                        <div class="creat2">
+                            <div>
+                                <img class="equal" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\radio-unchecked.png" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="creative">
+                        <div class="creat1">
+                            <div>
+                                <img class="equal spacing" src="public\file-zip.png" width="40" height="40">
+                            </div>
+                            <div class="cr">
+                                Personal
+                            </div>
+                        </div>
+                        <div class="creat2">
+                            <div>
+                                <img class="equal" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="creative">
+                        <div class="creat1">
+                            <div>
+                                <img class="equal spacing" src="public\file-zip.png" width="40" height="40">
+                            </div>
+                            <div class="cr">
+                                Hawaii Vacation Pics
+                            </div>
+                        </div>
+                        <div class="creat2">
+                            <div>
+                                <img class="equal" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                                <img class="equal space" src="public\checkmark.png" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="creative">
+                        <div class="creat1">
+                            <div>
+                                <img class="equal spacing" src="public\file-zip.png" width="40" height="40">
+                            </div>
+                            <div class="cr">
+                                Deleted Items
+                            </div>
+                        </div>
+                        <div class="creat2">
+                            <div>
+                                <img class="equal" src="public\radio-unchecked.png" width="30" height="30">
+                                <img class="equal space" src="public\radio-unchecked.png" width="30" height="30">
+                                <img class="equal space" src="public\radio-unchecked.png" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="theen">
+
+                </div>
+            </div>
+        </div>
+        <div class="row4 borderfil">
+            <div class="progress-bar">
+                <span class="progress-bar-fill" style="width: 60%;"></span>
+            </div>
+            <div class="borderfil">
+                60% of 5 GB Used
+            </div>
+            <div class="gb">
+                <img class="equal" src="public\checkmark.png" width="15" height="15">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
